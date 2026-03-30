@@ -1,14 +1,15 @@
 name: Faraaz Mo CI CD Workflow
 
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: We are testing this workflow
-      run: echo "Hello Everyone"
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    
+      - name: We are testing this workflow
+        run: echo "Hello Everyone"
