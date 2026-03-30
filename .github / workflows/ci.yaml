@@ -9,6 +9,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: We are testing this workflow
-      run: echo Hello Everyone
-      
+      run: echo "Hello Everyone"
+
     
