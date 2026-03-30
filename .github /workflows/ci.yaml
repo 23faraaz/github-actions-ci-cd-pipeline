@@ -2,6 +2,8 @@ name: Faraaz Mo CI CD Workflow
 
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -11,5 +13,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: We are testing this workflow
+      - name: Test message
         run: echo "Hello Everyone"
